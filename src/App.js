@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home';
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <div className="xl:mx-20">
         <NavBar />
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" render={() => <Home updateHeroDetails={updateHeroDetails} />} />
           <Route path="/character-detail" render={() => <HeroDetail heroDetails={heroDetails} />} />
