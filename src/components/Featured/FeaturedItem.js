@@ -32,12 +32,12 @@ function FeaturedItem({ url, updateHeroDetails }) {
       ) : (
         <div onClick={handleClick} aria-hidden="true" className="flex flex-col m-4 cursor-pointer">
           <img
-            className="transform-gpu h-80 w-50 object-cover object-top hover:scale-105 duration-75  my-3 rounded-xl"
+            className="transform-gpu h-48 sm:h-80 w-50 object-cover object-top hover:scale-105 duration-75  my-3 rounded-xl"
             src={hero.image.small_url}
             alt="small_image"
           />
           <div>
-            <p className="font-bold"> {hero.name}</p>
+            <p className="font-bold text-lg sm:text-2xl tracking-wide"> {hero.name}</p>
             <p>{hero.publisher.name}</p>
           </div>
         </div>

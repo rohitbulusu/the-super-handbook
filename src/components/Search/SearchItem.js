@@ -29,12 +29,12 @@ function SearchItem({ result, updateHeroDetails }) {
     <div>
       <div onClick={handleClick} aria-hidden="true" className="flex flex-col m-4 cursor-pointer">
         <img
-          className="transform-gpu h-80 w-50 object-cover object-top hover:scale-105 duration-75  my-3 rounded-xl"
+          className="transform-gpu h-48 sm:h-80 w-50 object-cover object-top hover:scale-105 duration-75  my-3 rounded-xl"
           src={results.image.small_url}
           alt="small_image"
         />
         <div>
-          <p className="font-bold"> {results.name}</p>
+          <p className="font-bold text-lg sm:text-2xl tracking-wide"> {results.name}</p>
           {results.publisher != null ? <p>{results.publisher.name}</p> : <p>None</p>}
         </div>
       </div>
