@@ -1,7 +1,16 @@
-const API_KEY = '7799b41b5fb2f9ab99d7692b941959126f9921bc';
-
 const requestsHeroes = {
-  url1: `/characters/4005-1699/?api_key=${API_KEY}&format=json&field_list=name,image,publisher,id`,
+  1: '1699',
+  2: '1443',
+  3: '1807',
+  4: '1440',
+  5: '1444',
+  6: '2048',
+  7: '1466',
+  8: '1449',
+  9: '1479',
+  10: '3200',
+  11: '2268',
+  12: '3552',
 };
 
 export default requestsHeroes;

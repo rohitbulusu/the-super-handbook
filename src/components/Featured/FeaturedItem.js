@@ -32,7 +32,7 @@ function FeaturedItem({ url, updateHeroDetails }) {
       ) : (
         <div onClick={handleClick} aria-hidden="true" className="flex flex-col m-4 cursor-pointer">
           <img
-            className="transform-gpu hover:scale-105 duration-75  my-3 rounded-xl"
+            className="transform-gpu h-80 w-50 object-cover object-top hover:scale-105 duration-75  my-3 rounded-xl"
             src={hero.image.small_url}
             alt="small_image"
           />
