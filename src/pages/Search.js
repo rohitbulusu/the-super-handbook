@@ -28,7 +28,7 @@ function Search({ updateHeroDetails }) {
 
   return (
     <div>
-      <h1 className="mx-4">Search</h1>
+      <h1 className="m-4 text-2xl">Search:</h1>
       <form className="flex flex-col mx-4 justify-center">
         <input
           className="my-4 appearance-none border-2 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
