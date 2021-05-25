@@ -32,7 +32,7 @@ function HeroDetail(hero) {
           <h3 className="font-bold text-xl">Powers:</h3>
           <div className="flex flex-wrap">
             {details[0].powers.map((item) => (
-              <div className="mr-1 my-1 px-3 bg-gray-600 rounded-2xl">
+              <div className="transform mr-1 my-1 px-3 bg-gray-600 rounded-2xl hover:scale-105">
                 <p className="text-white" key={item.id}>
                   {item.name}
                 </p>
