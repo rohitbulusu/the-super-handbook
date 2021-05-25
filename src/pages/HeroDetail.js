@@ -4,11 +4,11 @@ function HeroDetail(hero) {
   const details = Object.values(hero);
 
   return (
-    <div className="flex flex-col m-4 md:grid md:grid-cols-2">
-      <div className="mx-auto max-w-xl">
+    <div className="flex flex-col m-4 md:grid md:grid-cols-3">
+      <div className="mx-auto max-w-sm md:max-w-lg md:col-span-1">
         <img className="my-3 rounded-xl" src={details[0].image.original_url} alt="small_image" />
       </div>
-      <div className="md:m-6">
+      <div className="md:m-6 md:col-span-2">
         <p className="font-bold text-5xl"> {details[0].name}</p>
         <div className="my-5">
           <h3 className="font-bold text-xl">Publisher:</h3>
